@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'adielseffr.in';
+  currentYear : number = 0;
+
+  constructor(){
+    this.currentYear = (new Date()).getFullYear();
+  }
 }
