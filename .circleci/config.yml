@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/my-project
     docker:
-      - image: cimg/node:16.13.2
+      - image: circleci/node:latest-browsers
     steps:
       - checkout
       - restore_cache:
