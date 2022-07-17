@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OngoingProjectItem } from '../shared/models/ongoing-project-item';
-import {MatDialog, MatDialogRef} from '@angular/material/dialog';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-ongoing-projects',
