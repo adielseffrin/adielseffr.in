@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { OngoingProjectItem } from '../shared/models/ongoing-project-item';
+import { OngoingProjectItem } from '../../../../shared/models/ongoing-project-item';
 import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-ongoing-projects',
   templateUrl: './ongoing-projects.component.html',
-  styleUrls: ['../app.component.css','./ongoing-projects.component.css']
+  styleUrls: ['../../../../app.component.css','./ongoing-projects.component.css']
 })
 export class OngoingProjectsComponent implements OnInit {
 
