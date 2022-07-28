@@ -35,7 +35,8 @@ p {
   background-color: #1976d2;
   color: white;
   font-weight: 600;
-  /* justify-content: center; */
+  flex-wrap: nowrap;
+  justify-content: space-between;
   line-height: 20px;
 }
 
@@ -227,8 +228,16 @@ svg#clouds {
   overflow: visible;
 }
 
-.toolbar-menu-condensed{
+.toolbar-menu, .toolbar-menu-condensed{
+  margin-right: 1em;
+}
+
+.toolbar-menu-condensed > button{
   visibility: hidden;
+  display: none;
+  position: relative;
+  margin-right: 1em;
+  background-color: #7aaee1;
 }
 
 .toolbar-menu > button{
@@ -251,6 +260,15 @@ svg#clouds {
 
   .toolbar-menu{
     visibility: hidden;
+    display: none;
+  }
+
+  .toolbar-menu-condensed > button{
+    visibility: visible;
+    display: inherit;
+    position: relative;
+    float: right;
+    
   }
 }
 
