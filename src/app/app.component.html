@@ -1,58 +1,42 @@
 <div class="toolbar" role="banner">
-  <img
-    width="40"
-    alt="Adiel Seffrin Profile Picture"
-    src="https://media-exp2.licdn.com/dms/image/D4D03AQF_406nyAyvJA/profile-displayphoto-shrink_200_200/0/1642096514968?e=1662595200&v=beta&t=27MznypnLBJYHgVyQyc5-1Cr_8tUjMndwCUPXknu1C8"
-  />
-  <span>Adiel Seffrin - Link Tree</span>
-    <div class="spacer"></div>
+  
+  
+  <div class="toolbar-me-img">
+    <img
+      width="40"
+      alt="Adiel Seffrin Profile Picture"
+      src="https://media-exp2.licdn.com/dms/image/D4D03AQF_406nyAyvJA/profile-displayphoto-shrink_200_200/0/1642096514968?e=1662595200&v=beta&t=27MznypnLBJYHgVyQyc5-1Cr_8tUjMndwCUPXknu1C8"
+    />
+    <span>Adiel Seffrin - Link Tree</span>
+  </div>
+  <!-- <div class="spacer"></div> -->
+  <div class="toolbar-menu-condensed">
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/linktree">Home</button>
+      <button mat-menu-item [matMenuTriggerFor]="workarounds">Soluções Técnicas</button>
+    </mat-menu>
+    
+    <mat-menu #workarounds="matMenu">
+      <button mat-menu-item routerLink="/code-workaround/devexpress-grid-advanced-filter">Menu Avançado - DexExtreme</button>
+    </mat-menu>
+  </div>
+  <div class="toolbar-menu">
+      <button mat-button class="mat-menu-trigger" routerLink="/linktree">Home</button>
+      <button mat-button [matMenuTriggerFor]="workarounds">Soluções Técnicas</button>
+    
+    <mat-menu #workarounds="matMenu">
+      <button 
+        mat-menu-item 
+        routerLink="/code-workaround/devexpress-grid-advanced-filter" 
+      >
+        Menu Avançado - DexExtreme
+      </button>
+    </mat-menu>
+  </div>
 </div>
-
 <div class="content" role="main">
-
-  <!-- Highlight Card -->
-  <div class="card highlight-card card-small">
-     <span>Por enquanto, só alguns links aqui.</span>
-  </div>
-
-  <!-- Resources -->
-  <h2>Redes Sociais</h2>
-  <p>Um ponto de partida para trocarmos umas ideias:</p>
-
-  <div class="card-container">
-    <a class="card" target="_blank" rel="noopener" href="https://twitter.com/adielseffrin">
-      <img _ngcontent-iof-c66="" src="../assets/images/twitter-logo.svg" alt="Twitter icon" loading="lazy">
-      <span>Twitter</span>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-      </a>
-      
-    <a class="card" target="_blank" rel="noopener" href="https://instagram.com/adielseffrin">
-      <img _ngcontent-iof-c66="" src="../assets/images/instagram.webp" alt="Instagram icon" loading="lazy">
-      <span>Instagram</span>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>
-
-    <a class="card" target="_blank" rel="noopener" href="https://linkedin.com/in/adielseffrin">
-      <img _ngcontent-iof-c66="" src="../assets/images/linkedin.png" alt="Linkedin icon" loading="lazy">
-      <span>Linkedin</span>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>
-
-    <a class="card" target="_blank" rel="noopener" href="https://github.com/adielseffrin">
-      <img _ngcontent-iof-c66="" src="../assets/images/github.png" alt="Linkedin icon" loading="lazy">
-      <span>Github</span>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>
-
-    <a class="card" target="_blank" rel="noopener" href="https://blog.adielseffr.in">
-      <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 42v-3.55l10.8-10.8 3.55 3.55L27.55 42ZM6 31.5v-3h15v3Zm34.5-2.45-3.55-3.55 1.45-1.45q.4-.4 1.05-.4t1.05.4l1.45 1.45q.4.4.4 1.05t-.4 1.05ZM6 23.25v-3h23.5v3ZM6 15v-3h23.5v3Z"/></svg>
-      <span>Blog</span>
-      <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-    </a>
-
-  </div>
-  <div>
-    <app-ongoing-projects></app-ongoing-projects>
-  </div>
+  <router-outlet></router-outlet>
 </div>
 <div class="footer"><span>Adiel Seffrin - {{currentYear}}</span></div>
