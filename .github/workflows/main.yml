@@ -40,7 +40,7 @@ jobs:
           server: 45.132.242.233
           username: admin_deploycicd
           password: ${{ secrets.ftp_password }}
-          local-dir: dist/
+          local-dir: dist/adielseffr.in
           # adapt to your needs
           server-dir: public_html/
           dry-run: true
