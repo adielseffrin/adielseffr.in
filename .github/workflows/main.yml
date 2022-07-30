@@ -22,7 +22,7 @@ jobs:
       - name: Build dependencies
         run: npm run build
       - name: Archive production artifact
-        uses: actions/upload-artifact@main
+        uses: actions/upload-artifact@v3
         with:
           name: dist
           path: dist
@@ -33,12 +33,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@main
-      - name: Use Node.js 14
+      - name: Use Node.js 16
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '16'
       - name: Download artifact
-        uses: action/download-artifact@main
+        uses: action/download-artifact@v3
         with:
           name: dist
           path: dist
