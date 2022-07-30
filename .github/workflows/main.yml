@@ -40,4 +40,7 @@ jobs:
           server: 45.132.242.233
           username: admin_deploycicd
           password: ${{ secrets.ftp_password }}
+          localDir: dist
+          # adapt to your needs
+          remoteDir: html
     
