@@ -43,5 +43,5 @@ jobs:
           local-dir: dist/adielseffr.in/
           # adapt to your needs
           server-dir: public_html/
-          dry-run: true
+          dry-run: false
     
