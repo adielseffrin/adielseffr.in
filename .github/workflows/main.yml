@@ -42,6 +42,6 @@ jobs:
           password: ${{ secrets.ftp_password }}
           local-dir: dist/adielseffr.in/
           # adapt to your needs
-          server-dir: public_html/
+          server-dir: /
           dry-run: false
     
