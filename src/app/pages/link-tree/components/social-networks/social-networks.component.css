@@ -152,18 +152,7 @@
       height: 16px;
       margin: 8px 0;
     }
-
-    
-
-    svg#rocket-smoke {
-      right: 120px;
-      transform: rotate(-5deg);
-    }
   }
 
   @media screen and (max-width: 575px) {
-    svg#rocket-smoke {
-      display: none;
-      visibility: hidden;
-    }
   }
