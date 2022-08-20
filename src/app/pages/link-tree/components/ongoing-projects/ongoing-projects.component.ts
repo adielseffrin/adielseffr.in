@@ -14,7 +14,7 @@ export class OngoingProjectsComponent implements OnInit {
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
-    let socialMediaProject = new OngoingProjectItem({img:'palestra-redes-sociais.png',text:'Palestra - Utilizando as redes sociais para potencializar a sua carreira e seu aprendizado - Como utilizá-las até não sendo sociável.'});
+    let socialMediaProject = new OngoingProjectItem({img:'capa-btg-tdc.PNG',text:'Palestra - Utilizando as redes sociais para potencializar a sua carreira e seu aprendizado - Como utilizá-las até não sendo sociável.'});
         
     this.projects.push(socialMediaProject);
 

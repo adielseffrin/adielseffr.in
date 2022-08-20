@@ -1,0 +1,10 @@
+.app-ongoing-projects {
+    /* margin-top: 5em; */
+    height: fit-content;
+}
+@media screen and (max-width: 767px) {
+    .app-ongoing-projects {
+        /* margin-top: 5em; */
+        height: fit-content;
+    }
+}
