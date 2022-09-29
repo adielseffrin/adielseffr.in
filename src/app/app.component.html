@@ -1,6 +1,4 @@
 <div class="toolbar" role="banner">
-  
-  
   <div class="toolbar-me-img">
     <img
       width="40"
@@ -10,29 +8,38 @@
     <span>Adiel Seffrin - Link Tree</span>
   </div>
   <div class="toolbar-menu-condensed">
-    <!-- <button mat-button [matMenuTriggerFor]="menu">Menu</button> -->
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
     
     <mat-menu #menu="matMenu">
       <button mat-menu-item routerLink="/linktree">Home</button>
-      <button mat-menu-item [matMenuTriggerFor]="workarounds">Soluções Técnicas</button>
+      <button mat-menu-item [matMenuTriggerFor]="workarounds" i18n="menu-button-tech-solutions">Soluções Técnicas</button>
     </mat-menu>
     
     <mat-menu #workarounds="matMenu">
-      <button mat-menu-item routerLink="/code-workaround/devexpress-grid-advanced-filter">Menu Avançado - DexExtreme</button>
+      <button mat-menu-item routerLink="/code-workaround/devexpress-grid-advanced-filter" i18n="menu-button-dx-advanced-menu">Menu Avançado - DevExtreme Grid</button>
     </mat-menu>
   </div>
   <div class="toolbar-menu">
-      <!-- <button mat-button class="mat-menu-trigger" routerLink="/linktree">Home</button> -->
-      <!-- <button mat-button [matMenuTriggerFor]="workarounds">Soluções Técnicas</button> -->
+      <button mat-button class="mat-menu-trigger" routerLink="/linktree">Home</button>
+      <button mat-button [matMenuTriggerFor]="workarounds" i18n="menu-button-tech-solutions">Soluções Técnicas</button>
     
     <mat-menu #workarounds="matMenu">
       <button 
         mat-menu-item 
-        routerLink="/code-workaround/devexpress-grid-advanced-filter" 
-      >
-        Menu Avançado - DexExtreme
-      </button>
+        routerLink="/code-workaround/devexpress-grid-advanced-filter"
+        i18n="menu-button-dx-advanced-menu" 
+      >Menu Avançado - DevExtreme Grid</button>
     </mat-menu>
+  </div>
+  <div class="i18n-flag-selection">
+    <a class="" target="_self" rel="noopener" href="https://adielseffr.in/en-US/" *ngIf="loadedInPortuguese ;else flagInPortuguese">
+      <img _ngcontent-iof-c66="" src="../assets/images/us.svg" alt="US flag icon" loading="lazy" width="20px">
+    </a>
+    <ng-template #flagInPortuguese>
+      <a class="" target="_self" rel="noopener" href="https://adielseffr.in/pt/">
+        <img _ngcontent-iof-c66="" src="../assets/images/br.svg" alt="BR flag icon" loading="lazy" width="20px">
+      </a>
+    </ng-template>
   </div>
 </div>
 <div class="content" role="main">

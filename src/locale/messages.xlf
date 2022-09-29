@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="pt-BR" datatype="plaintext" original="ng2.template">
+  <file source-language="pt" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="3473069332144928348" datatype="html">
+        <source>Soluções Técnicas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">menu-button-tech-solutions</note>
+      </trans-unit>
+      <trans-unit id="1851992225930100867" datatype="html">
+        <source>Menu Avançado - DevExtreme Grid</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <note priority="1" from="description">menu-button-dx-advanced-menu</note>
+      </trans-unit>
+      <trans-unit id="5004259531066962955" datatype="html">
+        <source>Projetos em andamento</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/link-tree/components/ongoing-projects/ongoing-projects.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">ongoing-projects-header</note>
+      </trans-unit>
       <trans-unit id="6502323852118038630" datatype="html">
         <source>Por enquanto, só alguns links aqui.</source>
         <context-group purpose="location">
