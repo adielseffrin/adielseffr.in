@@ -6,13 +6,13 @@
     <div class="card" *ngFor="let project of projects" >
         <div *ngIf="project.url; else projectWithModal">
             <a target="_blank" rel="noopener" href="">
-                <img _ngcontent-iof-c66="" [src]="'../../assets/images/ongoing-projects/'+project.image" alt="Imagem do projeto" loading="lazy">
+                <img _ngcontent-iof-c66="" [src]="'./assets/images/ongoing-projects/'+project.image" alt="Imagem do projeto" loading="lazy">
                 <span>{{project.cardText}}</span>
             </a>
         </div>
         <ng-template #projectWithModal>
             <div (click)="openModal(this)">
-                <img _ngcontent-iof-c66="" [src]="'../../assets/images/ongoing-projects/'+project.image" alt="Imagem do projeto" loading="lazy">
+                <img _ngcontent-iof-c66="" [src]="'./assets/images/ongoing-projects/'+project.image" alt="Imagem do projeto" loading="lazy">
                 <span>{{project.cardText}}</span>
             </div>
         </ng-template>
