@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
 import { OngoingProjectItem } from '../../../../shared/models/ongoing-project-item';
 import {MatDialog} from '@angular/material/dialog';
+import { CurrentLocale } from 'src/app/shared/models/current-locales.enum';
+import { AppService } from 'src/app/services/app.service';
 
 @Component({
   selector: 'app-ongoing-projects',
@@ -11,13 +13,22 @@ export class OngoingProjectsComponent implements OnInit {
 
   projects : Array<OngoingProjectItem> = [];
 
-  constructor(public dialog: MatDialog) { }
+  constructor(
+    public dialog: MatDialog,
+    @Inject(LOCALE_ID) public locale: string,
+    private _appService: AppService) { }
 
   ngOnInit(): void {
-    let socialMediaProject = new OngoingProjectItem({img:'capa-btg-tdc.PNG',text:'Palestra - Utilizando as redes sociais para potencializar a sua carreira e seu aprendizado - Como utilizá-las até não sendo sociável.'});
-        
-    this.projects.push(socialMediaProject);
+    this.getOngoingProjects()
+  }
 
+  getOngoingProjects(){
+    this._appService.getOngoingProjects(this.locale)
+    .subscribe({
+      next: (v)=> this.projects = v,
+      error: (e) => console.error(e),
+      complete: () => console.info('complete') 
+    })
   }
 
   openModal($event:any){
