@@ -1,5 +1,4 @@
 import { Component, Inject, LOCALE_ID } from '@angular/core';
-import { Router } from '@angular/router';
 import { CurrentLocale } from './shared/models/current-locales.enum';
 
 @Component({
@@ -14,11 +13,9 @@ export class AppComponent {
   loadedInPortuguese: boolean = true;
 
   constructor(
-    private router: Router,
     @Inject(LOCALE_ID) public locale: string
     ){
     this.currentYear = (new Date()).getFullYear();
-    this.router.navigate(['/linktree'])
     this.loadedInPortuguese = this.locale == CurrentLocale.pt;
   }
 }

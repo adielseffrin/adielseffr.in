@@ -26,6 +26,30 @@
         </context-group>
         <note priority="1" from="description">menu-button-dx-advanced-menu</note>
       </trans-unit>
+      <trans-unit id="4254420788273557166" datatype="html">
+        <source>Filtro avançado para DxDataGrid</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/code-workarounds/devexpress-grid-advanced-filter/devexpress-grid-advanced-filter.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">advanced-grid-header-title</note>
+      </trans-unit>
+      <trans-unit id="7543799338888296733" datatype="html">
+        <source>Neste exemplo, podemos perceber como incluir um filtro avançado para realizar buscas. Este exemplo pode ser aplicado para incluir campos de filtros no componente da <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>toolbar<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/> que não estão presentes como colunas na grid principal.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/code-workarounds/devexpress-grid-advanced-filter/devexpress-grid-advanced-filter.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">advanced-grid-header-description</note>
+      </trans-unit>
+      <trans-unit id="5594400702497961229" datatype="html">
+        <source> Confira o código completo em: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/adielseffrin/adielseffr.in/tree/main/src/app/pages/code-workarounds&quot;&gt;"/>Github<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/code-workarounds/devexpress-grid-advanced-filter/devexpress-grid-advanced-filter.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+        <note priority="1" from="description">advanced-grid-header-github</note>
+      </trans-unit>
       <trans-unit id="5004259531066962955" datatype="html">
         <source>Projetos em andamento</source>
         <context-group purpose="location">

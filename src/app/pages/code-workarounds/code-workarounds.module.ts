@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { CodeWorkaroundsRoutingModule } from './code-workarounds-routing.module';
 import { DevexpressGridAdvancedFilterComponent } from './devexpress-grid-advanced-filter/devexpress-grid-advanced-filter.component';
+import { DxButtonModule, DxDataGridModule, DxDateBoxModule, DxTextBoxModule } from 'devextreme-angular';
+import { EmployeesService } from 'src/app/services/employee.service';
 
 
 @NgModule({
@@ -11,7 +13,14 @@ import { DevexpressGridAdvancedFilterComponent } from './devexpress-grid-advance
   ],
   imports: [
     CommonModule,
-    CodeWorkaroundsRoutingModule
+    CodeWorkaroundsRoutingModule,
+    DxDataGridModule,
+    DxButtonModule, 
+    DxDateBoxModule,
+    DxTextBoxModule,  
+  ],
+  providers:[
+    EmployeesService
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
