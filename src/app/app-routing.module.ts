@@ -11,6 +11,10 @@ const routes: Routes = [
     },
     children:[
       {
+        path: '',
+        loadChildren: () => import('./pages/link-tree/link-tree.module').then(m => m.LinkTreeModule)
+      },
+      {
         path: 'linktree',
         loadChildren: () => import('./pages/link-tree/link-tree.module').then(m => m.LinkTreeModule)
       },

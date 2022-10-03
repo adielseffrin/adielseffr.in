@@ -1,1 +1,42 @@
-<p>devexpress-grid-advanced-filter works!</p>
+<div class="advanced-grid-header-description">
+    <h2 i18n="advanced-grid-header-title">Filtro avançado para DxDataGrid</h2>
+    <p i18n="advanced-grid-header-description">Neste exemplo, podemos perceber como incluir um filtro avançado para realizar buscas. Este exemplo pode ser aplicado para incluir campos de filtros no componente da <i>toolbar</i> que não estão presentes como colunas na grid principal.</p>
+    <p i18n="advanced-grid-header-github">
+        Confira o código completo em: 
+        <a href="https://github.com/adielseffrin/adielseffr.in/tree/main/src/app/pages/code-workarounds">Github</a>
+    </p>
+    <hr>
+</div>
+<div class="advanced-grid-container">
+    <dx-data-grid id="dataGrid"
+    [dataSource]="employees"
+    [allowColumnResizing]="true"
+    (onContentReady)="onContentReady($event)"
+    keyExpr="EmployeeID">
+        <dxo-filter-row [visible]="true"></dxo-filter-row>
+        <dxo-search-panel [visible]="true"></dxo-search-panel>
+        <dxo-column-chooser
+        [enabled]="true"
+        mode="select">
+    </dxo-column-chooser>
+        <dxo-toolbar>
+            <dxi-item *ngFor="let item of dxToolbar.items"
+                [widget]="item.widget"
+                [name]="item.name"
+                [location]="item.location"
+                [options]="item.options"
+                [visible]="item.visible"
+            ></dxi-item>
+            <ng-container>
+                <dxi-item *ngFor="let item of dxAdvancedToolbar.items"
+                    [widget]="item.widget"
+                    [name]="item.name"
+                    [location]="item.location"
+                    [options]="item.options"
+                    [visible]="item.visible"
+                    cssClass="dx-item-advanced"
+                ></dxi-item>
+            </ng-container>
+        </dxo-toolbar>
+    </dx-data-grid>
+</div>

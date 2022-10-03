@@ -8,6 +8,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatMenuModule } from '@angular/material/menu';
 import { AppRoutingModule } from './app-routing.module';
 import { AppService } from './services/app.service';
+import { EmployeesService } from './services/employee.service';
 
 
 @NgModule({
@@ -20,10 +21,10 @@ import { AppService } from './services/app.service';
     MatDialogModule,
     MatMenuModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule    
   ],
   providers: [  
-    AppService
+    AppService,
   ],
   bootstrap: [AppComponent],
 })

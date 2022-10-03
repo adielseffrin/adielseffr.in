@@ -1,0 +1,37 @@
+.advanced-grid-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#dataGrid {
+    height: 500px;
+    max-width: 90%;
+}
+
+::ng-deep .dx-item-advanced{
+    position: relative;
+    top: 45px;
+    left: 0;
+    margin-bottom: 5px;
+}
+
+::ng-deep .dx-toolbar-advanced{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+::ng-deep .dx-hidden-container{
+    display: none;
+}
+
+::ng-deep .dx-toolbar-before,
+::ng-deep .dx-toolbar-center,
+::ng-deep .dx-toolbar-after{
+    top: 0;
+    height: initial;
+}
+
+.advanced-grid-header-description{
+    margin-bottom: 2rem;
+}
